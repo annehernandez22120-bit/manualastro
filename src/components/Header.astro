@@ -1,0 +1,4 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro"
+const allPost= Object.values(import.meta.glob('./posts/*.md', {eager: true}))
+---

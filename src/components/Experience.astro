@@ -1,0 +1,19 @@
+---
+const allPosts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }));
+const posts = allPosts.filter((p: any) => p.frontmatter.type === 'que es');
+---
+
+<section id="Experience" class="px-4 py-6">
+  <h2 class="text-xl font-bold mb-4 text-[#ff8fab]">¿Qué es Astro?, ¿Cómo lo instalo?</h2>
+  <div class="flex flex-col gap-4">
+    {posts.map((post: any) => (
+      <a href={post.url} class="block bg-white border border-[#ff8fab] rounded-2xl overflow-hidden hover:scale-[1.02] transition-transform shadow-sm">
+        <img src={post.frontmatter.image.url} alt={post.frontmatter.image.alt} class="w-full h-40 object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold text-sm text-[#5c2d3e]">{post.frontmatter.title}</h3>
+          <p class="text-xs text-[#c9818f] mt-1">{post.frontmatter.description}</p>
+        </div>
+      </a>
+    ))}
+  </div>
+</section>

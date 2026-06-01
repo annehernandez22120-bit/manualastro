@@ -1,0 +1,31 @@
+---
+import '../styles/global.css';
+const { frontmatter } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body class="max-w-md mx-auto font-sans bg-[#fff5f7] min-h-screen">
+    <div class="px-4 py-6">
+      <a href="/" class="text-sm text-[#ff8fab] hover:text-[##f6c8c7] mb-6 inline-block">← Volver</a>
+      <img src={frontmatter.image.url} alt={frontmatter.image.alt} class="w-80 mx-auto rounded-3xl object-cover mb-5" />
+      <h1 class="text-2xl font-bold text-[##f6c8c7] mb-2">{frontmatter.title}</h1>
+      <p class="text-xs text-[#c9818f] mb-1">Fechas: {frontmatter.date}</p>
+      <p class="text-sm text-[#5c2d3e] mb-5">{frontmatter.description}</p>
+      {frontmatter.github && (
+        <a href={frontmatter.github} target="_blank" rel="noopener noreferrer"
+          class="inline-block bg-[#5c2d3e] text-white text-sm px-5 py-2 rounded-full hover:bg-[##f6c8c7] transition-all mb-6">
+          GitHub
+        </a>
+      )}
+      <div class="text-sm text-[#5c2d3e] leading-relaxed">
+        <slot />
+      </div>
+    </div>
+  </body>
+</html>

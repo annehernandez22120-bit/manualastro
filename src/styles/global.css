@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #fff5f7;
+  --color-primary: #ffb3c6;
+  --color-secondary: #ff8fab;
+  --color-accent: ##f6c8c7;
+  --color-text: #5c2d3e;
+  --color-muted: #c9818f;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.cloud-card {
+  background: #fff8fb;
+  border: 4px solid #ffd6e7;
+  border-radius: 40px;
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.2);
+  padding: 1.5rem;
+}

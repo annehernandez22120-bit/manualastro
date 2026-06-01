@@ -1,0 +1,29 @@
+---
+import Experience from '../components/Experience.astro';
+import Education from '../components/Education.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+const { pageTitle } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body class="min-h-screen flex flex-col max-w-md mx-auto font-sans bg-[#fff5f7]">
+    <slot />
+    <Navigation />
+    <Experience />
+    <Education />
+    <footer class="mt-auto">
+      <Footer />
+    </footer>
+  </body>
+</html>
