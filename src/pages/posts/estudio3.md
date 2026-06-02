@@ -5,7 +5,7 @@ type: 'paso a paso'
 date: '01-06-2026'
 description: 'Abrir Astro en VSC'
 image:
-    url: 'https://i.pinimg.com/736x/6d/38/0b/6d380b2e25d985d5699d80e6f96cda1c.jpg'
+    url: 'https://i.pinimg.com/1200x/c3/65/92/c36592b422bd40bf4d1482d374e1b628.jpg'
     alt: 'img'
 tags: ["Node.js", "instalar"]
 ---
@@ -25,5 +25,5 @@ tags: ["Node.js", "instalar"]
 
 ## Ი𐑼PASO FINAL: Ejecutar el servidor en desarrollo
 
-**𖹭 Pon en la terminal <p>⤷ npm run dev</p>Veras algo parecido a<p>⤷ astro  ready in 500ms Local    http://localhost:4321/</p>**
+**𖹭 Pon en la terminal <p>⤷ npm run dev</p>Veras algo parecido a<p>⤷ astro  ready in 500ms Local    http://localhost:4321/</p> copia el enlace: <p>⤷ http://localhost:4321/</p>que te proporciona la terminal con:<p>⤷ CTRL+ALT+C</p>y pegalo en tu navegador.**
 </div>

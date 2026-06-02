@@ -18,7 +18,7 @@ tags: ["experiencia", "web", "astro"]
 3. **𖹭 Soporta generación de sitios estáticos (SSG) y renderizado en servidor (SSR).ּ ֶָ֢.**
 4. **𖹭 Compatible con React, Vue, Svelte, Tailwind CSS y muchas otras herramientas.ּ ֶָ֢.**
 </div>
-<div class="bg-[#fff8fb] rounded-[40px] p-6 shadow-md border-4 border-[#] mb-6">
+<div class="bg-[#fff8fb] rounded-[40px] p-6 shadow-md border-4 border-[#f6c8] mb-6">
 
 ## Ი𐑼¿En dónde puedo instalarlo?
 **𖹭 Sitio oficial de**

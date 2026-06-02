@@ -5,7 +5,7 @@ type: 'paso a paso'
 date: '01-06-2026'
 description: 'Instala Node.js'
 image:
-    url: 'https://i.pinimg.com/736x/6d/38/0b/6d380b2e25d985d5699d80e6f96cda1c.jpg'
+    url: 'https://i.pinimg.com/736x/b7/67/de/b767de83e49b603efe7a35b8481135c7.jpg'
     alt: 'img'
 tags: ["Node.js", "instalar"]
 ---
